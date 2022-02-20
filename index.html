@@ -29,19 +29,19 @@
           <div class="col-lg-6 col-md-6 col-sm-12 text-center mt-5 calculate-area pt-5">
             <h3 class="text-center fw-bold">Income</h3>
             <span class="fs-4">Income:</span>
-            <input id="total-income" class="w-50" type="text" placeholder="Total Income">
+            <input id="total-income" class="w-50" type="number" placeholder="Total Income">
 
             <!-- expenses field  -->
             <h3 class="text-center fw-bold mt-3">Expenses</h3>
 
             <span class="fs-4">Food:</span>
-            <input id="food-amount" class="w-50" type="text" placeholder="Food Amount" required>
+            <input id="food-amount" class="w-50" type="number" placeholder="Food Amount" required>
             <br>
             <span class="fs-4">Rent:</span>
-            <input id="rent-amount" class="w-50" type="text" placeholder="Rent Amount"required>
+            <input id="rent-amount" class="w-50" type="number" placeholder="Rent Amount"required>
             <br>
             <span class="fs-4">Clothes:</span>
-            <input id="cloth-amount" class="w-50" type="text" placeholder="Cloth Amount" required>
+            <input id="cloth-amount" class="w-50" type="number" placeholder="Cloth Amount" required>
 
             <br>
             <!-- calculate btn  -->
@@ -57,7 +57,7 @@
             <!-- saving info  -->
             <div class="saving-info">
               <span class="fs-4">Save:</span>
-              <input id="saving" class="text-center w-25" type="text" placeholder="Saving Amount">
+              <input id="saving" class="text-center w-25" type="number" placeholder="Saving Amount">
               <span class="fs-4"> % </span>
               <button id="saving-btn" class="btn btn-primary px-5">Save</button>
             </div>
@@ -70,6 +70,26 @@
       </div>
     </section>
   </header>
+
+  <section class="requirement">
+    <h1 class="fs-2 mt-5 pt-5 px-5 text-danger fw-bold">Requirement</h1>
+    
+    <p>১. User তার টোটাল ইনকাম এবং তার টোটাল খরচ বসানোর পর Calculate বাটন এ Click করলে Total Expenses এর ওইখানে তার টোটাল খরচ কত হয়েছে তা দেখাবে। এবং তার টোটাল ইনকাম থেকে তার খরচ এর টাকা বাদ দিয়ে যা থাকে তা Balance এর ওইখানে দেখাবে।</p>
+
+    <p>২. User তার টোটাল ইনকাম এর কত % সেভ করতে চায় তো বসানোর পর Save বাটন এ Click করলে তার কত টাকা সেভ হয়েছে তা Saving Amount এ দেখাবে। এবং তার আগের ব্যালেন্স অর্থাৎ টোটাল খরচ করার পর যত টাকা বাকি ছিল সেইটা থেখে তার Saving টাকা টা বাদ দিয়ে যা থাকে সেইটা Remaining Balance এ দেখাবে।</p>
+
+    <h1 class="fs-2 mt-2 px-5 text-danger fw-bold">Validation</h1>
+
+    <p>১. User কোন Negative সংখ্যা দিলে err দেখাবে। err টা সরসরি input field এও দেখাতে পার অথবা চাইলে alert দিয়েও দেখাতে পার।</p>
+
+    <p>২. টোটাল খরচ এর টাকা তার টোটাল ইনকাম এর চাইতে বেশি হতে পারবে না। যদি হয় তাহলে err দেখাবে।</p>
+
+    <p> ৩. সেভিংস এর টাকা তার Balance এর টাকার চাইতে বেশি হতে পারবে না। যদি হয় তাহলে err দেখাবে।</p>
+
+    <p>৪. কোন কিছু না ইনপুট করে যদি Calculate অথবা Save এ Click করে তাহলে err দেখাবে।</p>
+
+
+  </section>
 
 
     <!-- my script file  -->
