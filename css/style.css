@@ -4,6 +4,9 @@
 body{
   width: 100%;
   height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgba(182, 42, 218, 0.11);
 }
 
 /* title text  */
@@ -21,9 +24,10 @@ input{
 }
 .calculate-area{
   line-height: 50px;
-  background-color: #EEEDED;
+  background-color: #FAFAFA;
   border-radius: 10px;
 }
+
 .img-png{
   width: 130px;
   height: 50px;
@@ -34,4 +38,116 @@ p{
 
 .requirement{
   padding: 0 0 50px 50px;
+}
+
+
+
+/* background animation  */
+
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+.animation-area {
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: #c00b9f28;
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+  border-radius: 50%;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.box-area li:nth-child(7) {
+	left: 10%;
+	width: 120px;
+	height: 120px;
+	animation-delay: 2.5s;
+  border-radius: 50%;
+}
+.box-area li:nth-child(8) {
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 3.5s;
+  border-radius: 92% 8% 70% 30% / 86% 79% 21% 14%  ;
+}
+.box-area li:nth-child(9) {
+	left: 70%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3s;
+  border-radius: 53% 47% 70% 30% / 86% 47% 53% 14% ;
+}
+.box-area li:nth-child(10) {
+	left: 82%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3s;
+  border-radius: 78% 22% 88% 12% / 50% 90% 10% 50% ;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0;
+	}
+  50%{
+    opacity: 1;
+  }
+	100% {
+		transform: translateY(-1500px) rotate(360deg);
+		opacity: 1;
+	}
 }
